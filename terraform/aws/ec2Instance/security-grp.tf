@@ -26,6 +26,14 @@ resource "aws_security_group" "security_group_zabbix" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+    ingress {
+    description = "allow zabbix agent" 
+    from_port   = 10050
+    to_port     = 10050 
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
   egress {
     from_port   = 0
     to_port     = 0
