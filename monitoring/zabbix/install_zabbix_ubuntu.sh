@@ -43,3 +43,11 @@ sudo systemctl restart mariadb zabbix-server zabbix-agent apache2
 
 # Check service status
 sudo systemctl status zabbix-server zabbix-agent apache2
+
+# # # Steps to install zabbix through bash script
+# sudo nano install_zabbix_ubuntu.sh
+# # Paste the above code into the file
+# # Save and exit the file
+# # Make the script executable and run it
+# chmod +x install_zabbix_ubuntu.sh
+# ./install_zabbix_ubuntu.sh
