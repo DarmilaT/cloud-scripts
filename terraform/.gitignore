@@ -26,3 +26,5 @@ override.tf.json
 terraform.rc
 
 *.lock.hcl
+
+*.tfstate.lock.info
