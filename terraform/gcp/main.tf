@@ -5,3 +5,8 @@ module "projects" {
     project_id          = var.project_id
 }
 
+module "compute" {
+    source = "./compute"
+
+    project_id = var.project_id
+}
